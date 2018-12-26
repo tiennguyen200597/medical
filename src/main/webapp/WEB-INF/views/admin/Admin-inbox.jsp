@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <!DOCTYPE html><html><!-- InstanceBegin template="/Templates/template for admin.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
     <!-- Required meta tags-->

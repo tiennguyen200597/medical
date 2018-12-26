@@ -3,6 +3,7 @@ encoding//src/main/java/com/tien/controller/LoginController.java=UTF-8
 encoding//src/main/webapp/WEB-INF/views/admin/Admin-ManageProduct.jsp=ISO-8859-1
 encoding//src/main/webapp/WEB-INF/views/admin/Admin-ManageUser.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/admin/Admin-home.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/admin/Admin-inbox.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/billcontent.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/billcontent_info.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/medicalonline.jsp=UTF-8

@@ -4,6 +4,9 @@ package com.tien.controller;
 import java.io.IOException;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -45,18 +48,17 @@ public class UserController {
 	@RequestMapping(value="/login.do", method=RequestMethod.POST)
 	public String loginUser(User user, @RequestParam String username, @RequestParam String password,ModelMap map) throws IOException {
 			user.setUsername(username);
-			user.setPassword(password);		
-			
+			user.setPassword(password);				
 			  AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		      UserService userService = (UserService) context.getBean("userService");
 		      User user1= userService.selectinfo(username);		      
 		       int check= userService.selectUser(user);
 		       if (check==1&&user1.getIdphanquyen()==2) {
-		    	   map.put("msg", username);
+		    	  
 				return"admin/Admin-home";				
 			}
 		       else if(check==1) {
-		    	   map.put("msg", username);
+		    	 
 		    	   return"index";
 		       }
 		       else {
@@ -65,5 +67,9 @@ public class UserController {
 			}
 		 		  
 	
+	}
+	private void getuser() {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -42,4 +42,8 @@ public class HomeController {
 	public String AdminManageProduct() {
 		return "admin/Admin-ManageProduct";
 	}
+	@RequestMapping("/Admin-inbox")
+	public String AdminInbox() {
+		return "admin/Admin-inbox";
+	}
 }
